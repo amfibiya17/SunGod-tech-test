@@ -1,0 +1,8 @@
+@import 'tailwind.css';
+
+.container {
+  @apply px-sm md:px-md xl:px-lg
+    mx-auto;
+
+  max-width: 1500px;
+}
