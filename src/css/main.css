@@ -21,7 +21,7 @@ body, html {
   border-radius: 12px;;
 }
 
-h1 {
+.main__text {
   font-family: Lausanne;
   font-size: 32px;
   line-height: 35px;
@@ -32,6 +32,7 @@ h1 {
   color: #1A1A1A;
   padding-top: 69px;
   padding-bottom: 28px;
+  margin-left: 13px;
 }
 
 .Stories {
@@ -45,6 +46,8 @@ h1 {
   background: -webkit-linear-gradient(90deg, #5c0e99 15%, #1399e1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-left: 13px;
+  padding-bottom: 8px;
 }
 
 p {
@@ -110,7 +113,7 @@ p {
 }
 
 .Story__img--hover {
-  transition: 0.3s all ease-out;
+  transition: 0.4s all ease-out;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -124,7 +127,7 @@ p {
 
 .Story {
   margin-right: 25px;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
   width: 30%;
   height: 480px;
@@ -139,7 +142,7 @@ p {
 
 .Story:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
-  transform: scale(1.005, 1.005);
+  transform: scale(1.015, 1.015);
   background: linear-gradient(90deg, #5c0e99 15%, #1399e1 100%);
 }
 
@@ -160,11 +163,6 @@ p {
   color: #afafaf;
 }
 
-.Story__info:hover {
-  opacity: 1;
-  transition: all 0s linear 0s;
-}
-
 .Story__date {
   font-family: Lausanne;
   text-transform: uppercase;
@@ -181,7 +179,6 @@ p {
   font-family: Lausanne;
   letter-spacing: -0.01em;
   font-size: 22px;
-  
 }
 
 .Story__by {
@@ -205,12 +202,13 @@ p {
 }
 
 .Story:hover .Story__info {
-    background-color: transparent;
-    position: relative;
+  background-color: transparent;
+  position: relative;
+  opacity: 0;
 }
 
 .Story:hover .Story__info-hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .space {
