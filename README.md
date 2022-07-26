@@ -1,3 +1,7 @@
+# Outcome
+![First screenshot](https://i.postimg.cc/XJTR5yfy/Screenshot-2022-07-26-at-18-38-20.png)
+![Second screenshot](https://i.postimg.cc/ZKmghmVZ/Screenshot-2022-07-26-at-18-38-51.png)
+
 # SunGod Junior Frontend Developer Task
 This task is designed to assess your ability to follow a brief and work independently to produce high quality work. 
 
