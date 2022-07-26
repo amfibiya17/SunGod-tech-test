@@ -1,8 +1,218 @@
 @import 'tailwind.css';
 
+body, html {
+  font-family: Lausanne;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: #E5E5E5;
+}
+
 .container {
   @apply px-sm md:px-md xl:px-lg
     mx-auto;
 
-  max-width: 1500px;
+  width: 1245px;
+  height: 726px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  padding-bottom: 58px;
+  border-radius: 12px;;
+}
+
+h1 {
+  font-family: Lausanne;
+  font-size: 32px;
+  line-height: 35px;
+  line-height: 110%;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.01em;
+  color: #1A1A1A;
+  padding-top: 69px;
+  padding-bottom: 28px;
+}
+
+.Stories {
+  font-family: Lausanne;
+  font-size: 24px;
+  line-height: 29px;
+  line-height: 120%;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: -0.01em;
+  background: -webkit-linear-gradient(90deg, #5c0e99 15%, #1399e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-family: Lausanne;
+  font-size: 16px;
+  line-height: 29px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #1A1A1A;
+  text-align: justify;
+}
+
+.storiesRow {
+  display: inline-block;
+}
+
+.Story--1 .Story__img, .Story--1 .Story__img--hover {
+    background-image: url('https://imgproxy.sungod.co/Sswym40wh83_cFbE1bsevJbEW7AFvKPdR7uXk7T5yT0/fill/800/600/no/1/aHR0cHM6Ly9zdGF0/aWMuc3VuZ29kLmNv/L3N0b3J5LWltYWdl/cy82MjA2NDJhZTVh/OWRmMy45MzQzMzU1/MV9rZWdsZm9oam5x/aW1wLmpwZWc.jpeg');
+}
+
+.Story--2 .Story__img, .Story--2 .Story__img--hover {
+    background-image: url('https://imgproxy.sungod.co/Mm7fNT_uGbcrbcHXgweuB4CieEzPwKDf1LXZJ9-vXVo/fill/800/600/no/1/aHR0cHM6Ly9zdGF0/aWMuc3VuZ29kLmNv/L3N0b3J5LWltYWdl/cy82MjA2MmUyMDdm/OTcxNi4yMTg0MzIx/NV9pZ29maGVwbGtq/bnFtLmpwZWc.jpeg');
+}
+
+.Story--3 .Story__img, .Story--3 .Story__img--hover {
+  background-image: url('https://imgproxy.sungod.co/i3UnzX4mk-w0KhpFLrVYFVfUKA38yqeNxNpuw36qXsM/fill/800/600/no/1/aHR0cHM6Ly9zdGF0/aWMuc3VuZ29kLmNv/L3N0b3J5LWltYWdl/cy82MWZiYTdmMzAx/M2MyOC40MDM4Nzg0/NF9pa2hxZm9tZ3Bu/ZWpsLmpwZWc.jpeg');
+}
+
+.Story__clock {
+  width: 20px;
+  vertical-align: middle;
+  fill: #ffffff;
+  float: right;
+}
+.Story__time {
+  font-size: 15px;
+  color: #ffffff;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.Story__clock-info {
+  float: right;
+}
+
+.Story__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; 
+}
+
+.Story__info-hover {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.Story__img--hover {
+  transition: 0.3s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+
+.Story {
+  margin-right: 25px;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 30%;
+  height: 480px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+  float: left;
+  margin: 1%;
+  margin-left: 15px;
+}
+
+.Story:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.005, 1.005);
+  background: linear-gradient(90deg, #5c0e99 15%, #1399e1 100%);
+}
+
+.Story__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 20px 15px 14px 14px;
+}
+
+.Story__category {
+  font-family: Lausanne;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  color: #afafaf;
+}
+
+.Story__info:hover {
+  opacity: 1;
+  transition: all 0s linear 0s;
+}
+
+.Story__date {
+  font-family: Lausanne;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  color: #afafaf;
+  float: right;
+}
+
+.Story__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: Lausanne;
+  letter-spacing: -0.01em;
+  font-size: 22px;
+  
+}
+
+.Story__by {
+  font-size: 12px;
+  font-family: Lausanne;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  padding-top: -20px;
+}
+
+.Story__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #5c0e99;
+  padding-top: -20px;
+}
+
+.Story:hover .Story__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.Story:hover .Story__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.Story:hover .Story__info-hover {
+    opacity: 1;
+}
+
+.space {
+  margin-top: 40px;
 }
